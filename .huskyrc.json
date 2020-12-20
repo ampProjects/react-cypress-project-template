@@ -1,5 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "yarn format && yarn lint && git add -A .&& CI=true react-scripts test && yarn cypress:run"
+    "pre-commit": "yarn format && yarn lint && git add -A .",
+    "pre-push": "CI=true react-scripts test && yarn cypress:run"
   }
 }
