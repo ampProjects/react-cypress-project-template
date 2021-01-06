@@ -1,8 +1,57 @@
-# Getting Started with Create React App
+# React App Starter (Cypress, Enzyme, Typescript ...)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Instalation
+
+- Clone the repo
+- `yarn install` or `npm install`
+
+## Configuration
+
+This proyect has been configured with:
+
+- Cypress for e2e testing
+- Enzyme for Component unit and integration testing
+- Eslint: Airbnb for react package
+- Prettier to format code
+- Typescript
+- Commitzent friend. Commit message with style and scopes!
+- Husky hooks to make sure we commit and pushing the right code!
+
+## Commit Cycle Hooks
+
+### Pre Commit
+
+When we create a commit, husky hooks comes up and run prettier and eslint command before to finish the commit
+
+### Pre Push
+
+When we push our change to the repo, husky hooks comes up and run unit testing and e2 testing. We make sure our code is fully tested before to push it to the repo. The app needs to be run locally before to push the code, because cypress:run commands, needs the app running locally to make the e2e test.
+
+## Aditional Scrips
+
+### `yarn cypress:open`
+
+It runs Cypess command to make e2e test in cypress ecosystem.
+
+### `yarn cypress:run`
+
+It runs Cypess command to make e2e test in command line, ideal to make CI/CD integration.
+
+### `yarn lint`
+
+It runs eslint command in src directory.
+
+### `yarn format`
+
+It runs prettier command. We write and check files.
+
+### `yarn commit`
+
+It runs commitzent-friendly command. it prompts up in command line interface a helpful menu to create commit messages acording Angular team.
+
+## Available React Team Scripts
 
 In the project directory, you can run:
 
