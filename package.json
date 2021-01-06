@@ -11,7 +11,7 @@
     "cypress:run": "cypress run",
     "lint": "eslint src/**/*.ts src/**/*.tsx",
     "format": "prettier --write . && prettier --check .",
-    "commit": "cz"
+    "cm": "cz"
   },
   "eslintConfig": {
     "extends": [
